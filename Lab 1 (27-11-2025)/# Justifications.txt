@@ -2,7 +2,7 @@ Justifications:
 
 1. Sum of 'n' natural numbers -> Formula based approach (n(n+1)/2) so it takes O(1) Space Complexity
 
-2. Sum of squares of 'n' natural numbers -> Formula based approach so it takes O(1) Space Complexity
+2. Sum of squares of 'n' natural numbers -> Formula based approach ((n(n+1)(2n+1))/6) so it takes O(1) Space Complexity
 
 3. Sum of cubes of 'n' natural numbers -> Formula based approach (n(n+1)/2)^2 so it takes O(1) Space Complexity
 
