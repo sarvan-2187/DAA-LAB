@@ -8,6 +8,6 @@ Justifications:
 
 4. Factorial using Recursion Program -> Used recursion and as the function is recursively called n times it takes O(N) Space Complexity
 
-5. Transpose of 3x3 matrix -> Tweaked the code while taking input itself and also used the fixed size array it takes O(1) Space Complexity
+5. Transpose of 3x3 matrix -> Tweaked the code while taking input itself and also used the fixed size array i.e., space does not grow with n → constant space. it takes O(1) Space Complexity
 
 6. FIbonacci Series -> Used recursion based approach for this with a repeated for loop call so it takes O(N) Space Complexity
