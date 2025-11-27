@@ -1,5 +1,5 @@
 # Lab 1 -> 6 Programs with Space Complexity Justifications
----
+
 1. Sum of n natural numbers
 
 2. Sum of squares of n natural numbers
