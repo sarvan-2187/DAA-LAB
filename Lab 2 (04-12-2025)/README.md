@@ -1,4 +1,4 @@
-## Sorting Techniques
+# Lab 2 -> Sorting Techniques
 
 1. Bubble Sort
 2. Insertion Sort
