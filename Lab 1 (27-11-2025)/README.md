@@ -12,3 +12,5 @@
 
 6. Fibonacci Series
   
+Submission Deadline: 30-11-2025
+Submitted on: 27-11-2025 (Updated README on 10-12-2025)
