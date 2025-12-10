@@ -11,3 +11,7 @@
 5. Heap Sort using Min Heap
 
 6. Heap Sort using Max Heap
+
+<br>
+Submission Deadline: 14-12-2025
+Submitted on: 7-12-2025 (Updated the lab report on 10-12-2025)
