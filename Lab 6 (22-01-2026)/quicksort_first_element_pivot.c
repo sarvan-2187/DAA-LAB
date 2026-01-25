@@ -37,10 +37,10 @@ void printArray(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {10, 7, 8, 9, 1, 5};
+    int arr[] = {157, 110 , 147, 122, 111, 149, 151, 141, 123, 112, 117, 133};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    quickSortFirst(arr, 0, n - 1);
+    quickSortPivot(arr, 0, n - 1);
     printArray(arr, n);
 
     return 0;
