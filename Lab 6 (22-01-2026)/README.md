@@ -1,7 +1,7 @@
 
 ## Lab 6
 
-1. Quick Sort 
+1. Quick Sort (3 Pivot Elemnt strategies)
 2. Quick Select
 
 <br>
