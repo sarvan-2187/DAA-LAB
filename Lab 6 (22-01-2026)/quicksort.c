@@ -7,9 +7,9 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
-// Partition function
+// Partition function (Lomuto partition)
 int partition(int arr[], int low, int high) {
-    int pivot = arr[high];
+    int pivot = arr[high];   // Pivot element
     int i = low - 1;
 
     for (int j = low; j < high; j++) {
@@ -23,31 +23,26 @@ int partition(int arr[], int low, int high) {
     return i + 1;
 }
 
-// Quick Select function
-int quickSelect(int arr[], int low, int high, int k) {
-    if (low <= high) {
+// Quick Sort function
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
         int pi = partition(arr, low, high);
 
-        if (pi == k)
-            return arr[pi];
-        else if (pi > k)
-            return quickSelect(arr, low, pi - 1, k);
-        else
-            return quickSelect(arr, pi + 1, high, k);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
     }
-
-    return -1; // Invalid case
 }
 
 // Driver code
 int main() {
-    int arr[] = {7, 10, 4, 3, 20, 15};
+    int arr[] = {10, 7, 8, 9, 1, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 2;  // 0-based index (2 means 3rd smallest)
 
-    int result = quickSelect(arr, 0, n - 1, k);
+    quickSort(arr, 0, n - 1);
 
-    printf("K-th smallest element: %d\n", result);
+    printf("Sorted array:\n");
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
 
     return 0;
 }
