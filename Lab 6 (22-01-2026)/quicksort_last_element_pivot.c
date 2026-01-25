@@ -33,16 +33,18 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
-// Driver code
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
+
 int main() {
-    int arr[] = {10, 7, 8, 9, 1, 5};
+    int arr[] = {157, 110 , 147, 122, 111, 149, 151, 141, 123, 112, 117, 133};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     quickSort(arr, 0, n - 1);
-
-    printf("Sorted array:\n");
-    for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+    printArray(arr, n);
 
     return 0;
 }
