@@ -84,14 +84,11 @@ int main(){
     while (size > 1){
         int min1, min2;
         findTwoMin(nodes, size, &min1, &min2);
-
         struct Node *left = nodes[min1];
         struct Node *right = nodes[min2];
-
         struct Node *new = newNode('$', left->freq + right->freq);
         new->left = left;
         new->right = right;
-
         if (min1 > min2){
             nodes[min1] = nodes[size - 1];
             nodes[min2] = new;
